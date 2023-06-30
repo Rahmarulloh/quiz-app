@@ -8,13 +8,54 @@
   </head>
   <body>
     <div class="container">
-      <div class="register_window">
-        <input type="text" class="player_name" placeholder="Enter player name">
+      <!-- Register window start -->
+      <div class="register_window hide">
+        <input
+          type="text"
+          class="player_name"
+          placeholder="Enter player name"
+        />
 
-        <button class="start_btn">
-          Start Game
-        </button>
+        <button class="start_btn">Start Game</button>
       </div>
+      <!-- Register window end -->
+
+      <!-- Game window start -->
+      <div class="game_window">
+        <div class="game_header">
+          <div class="game_number header_circle">1</div>
+
+          <div class="game_player-name">Player name</div>
+
+          <div class="game_time header_circle"><span id="time">10</span>S</div>
+        </div>
+
+        <div class="game_play">
+          <div class="game_question">
+            <div class="question_number">5</div>
+            <div class="question_operation">+</div>
+            <div class="question_number">5</div>
+          </div>
+
+          <div class="game_line"></div>
+
+          <div class="game_answers">
+            <div class="answer_number">5</div>
+            <div class="answer_number">25</div>
+            <div class="answer_number">50</div>
+            <div class="answer_number">-15</div>
+          </div>
+        </div>
+
+        <div class="game_footer">
+          <div class="game_colors">
+            <div class="colors_circle green" title="To'g'ri javoblar"></div>
+            <div class="colors_circle red" title="noto'g'ri javoblar"></div>
+            <div class="colors_circle black" title="Belgilanmaganlar"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Game window end -->
     </div>
   </body>
 </html>
