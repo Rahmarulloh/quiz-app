@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz app</title>
-    <link rel="stylesheet" href="style.css  " />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <!-- Register window start -->
-      <div class="register_window hide">
+      <div class="register_window">
         <input
           type="text"
           class="player_name"
@@ -21,9 +21,9 @@
       <!-- Register window end -->
 
       <!-- Game window start -->
-      <div class="game_window">
+      <div class="game_window hide">
         <div class="game_header">
-          <div class="game_number header_circle">1</div>
+          <div class="game_number header_circle">01</div>
 
           <div class="game_player-name">Player name</div>
 
@@ -32,9 +32,9 @@
 
         <div class="game_play">
           <div class="game_question">
-            <div class="question_number">5</div>
+            <div class="question_number" id="num1">5</div>
             <div class="question_operation">+</div>
-            <div class="question_number">5</div>
+            <div class="question_number" id="num2">5</div>
           </div>
 
           <div class="game_line"></div>
@@ -57,5 +57,7 @@
       </div>
       <!-- Game window end -->
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
